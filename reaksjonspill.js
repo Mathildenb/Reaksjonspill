@@ -220,7 +220,7 @@
     
         //funksjonen skjer når det registreres et tastetrykk
         function lesTast(){ 
-            console.log(event)
+            //console.log(event)
             if((event.code === 'Space') || (event.srcElement === spinnerEl)){
                 startSpill(); //når brukeren trykker space starter spillet
             }
