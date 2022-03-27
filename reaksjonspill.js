@@ -44,7 +44,7 @@
 
         //legger til en lytter for når en tast trykkes ned i body elementet
         bodyEl.addEventListener('keydown', lesTast);
-        bodyEl.addEventListener('click', lesTast);
+        spinnerEl.addEventListener('click', lesTast);
 
         //legger til en lytter for når knappene trykkes på
         knappBtn_1.addEventListener('click', lesTast);
@@ -221,7 +221,7 @@
         //funksjonen skjer når det registreres et tastetrykk
         function lesTast(){ 
             console.log(event)
-            if((event.code === 'Space') || (event.srcElement === bodyEl)){
+            if((event.code === 'Space') || (event.srcElement === spinnerEl)){
                 startSpill(); //når brukeren trykker space starter spillet
             }
             if((event.key === 'a') || (event.srcElement === knappBtn_1)){
