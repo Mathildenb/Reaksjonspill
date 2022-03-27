@@ -163,7 +163,7 @@
                     vinnerEl_1.innerText = brukernavnEl_1.value + " vant!";
 
                     //oppdaterer informasjon til brukeren, ved å kalle på "oppdaterTekst" funksjonen
-                    oppdaterTekst("Trykk Space for ny runde!", 'stop'); 
+                    oppdaterTekst("Trykk Space eller på sirkelen for ny runde!", 'stop'); 
                 }
             }
             //koden her skjer når spiller 2 trykker på tasten sin (arrow left)
