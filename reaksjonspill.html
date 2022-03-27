@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>    
+    <link rel="stylesheet" href="reaksjonspill.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="bakgrunn">
+        <h1>Reaksjonspill (1 vs 1)</h1>
+        <div id="forklaring">
+            <p>
+                <h3>Slik fungerer spillet:</h3>
+                <ul>
+                    <li>Skriv inn brukernavn</li>
+                    <li>Trykk Space for å starte</li>
+                    <li>Vent på at skjermen blir grønn og at lyden går av</li>
+                    <li>Spiller 1 skal trykke på tasteknapp A</li>
+                    <li>Spiller 2 skal trykke på tasteknapp Arrow Left</li>
+                    <li>Man taper hvis man trykker før tiden</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <section class="hoved">
+        
+        <div id="spinner"></div>
+        <h2 id="instruks">Trykk Space for å starte</h2>
+
+        <div id="spillskjerm">
+            <div id="spiller1">
+
+                <div class="del-1">
+                    <label for="navn_1"> <h3>Skriv inn brukernavn:</h3></label>
+                    <input type="text" id="brukernavn_1" placeholder="Spiller 1">
+
+                    <div class="timer">
+                        <div>
+                            <div class="sekund_1"> 0 </div>
+                            <h3>Sekund</h3>
+                        </div>
+
+                        <div>
+                            <div class="millisekund_1"> 0 </div>
+                            <h3>Millisekund</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 id="vinner_1"></h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="spiller2">
+
+                <div class="del-1">
+                    <label for="navn_2"><h3>Skriv inn brukernavn:</h3></label>
+                    <input type="text" id="brukernavn_2" placeholder="Spiller 2">
+        
+                    <div class="timer">
+                        <div>
+                            <div class="sekund_2"> 0 </div>
+                            <h3>Sekund</h3>
+                        </div>
+        
+                        <div>
+                            <div class="millisekund_2"> 0 </div>
+                            <h3>Millisekund</h3>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 id="vinner_2"></h2>
+                    </div>
+        
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="resultat">
+            <div class="score"><h3 id="score_1">Score: 0</h3></div> 
+            <div class="score"><h3 id="score_2">Score: 0</h3></div>
+        </div>
+
+        <div id="knapper">
+            <button id="knapp_1" onclick()> Trykk her</button>
+            <button id="knapp_2" onclick()> Trykk her</button>
+        </div>
+
+    </section>
+   
+    <audio id="startSound">                 
+        <source src="start.mp3" />                     
+    </audio>
+    
+    <script src="reaksjonspill.js"></script>
+    <!--- 
+    Kilder:
+
+    Lyd kilde: https://learningsolutionsmag.com/articles/coding-sound-with-javascript-beginner-s-guide
+
+    Timer: https://www.youtube.com/watch?v=Rib69h2DOxg
+
+    Tutorial på spinner: https://tutorialzine.com/2017/05/getting-started-with-the-javascript-web-animation-api-->
+</body>
+</html>
