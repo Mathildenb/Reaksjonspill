@@ -134,7 +134,7 @@
                 } 
 
                 //oppdaterer informasjon til brukeren, ved å kalle på "oppdaterTekst" funksjonen
-                oppdaterTekst("Trykk Space for ny runde!", 'stop');   
+                oppdaterTekst("Trykk Space eller på sirkelen for ny runde!", 'stop');   
             }
 
             //koden her skjer når spiller 1 trykker på tasten sin (a)
@@ -192,7 +192,7 @@
                     vinnerEl_2.innerText = brukernavnEl_2.value + " vant!";
 
                     //oppdaterer informasjon til brukeren, ved å kalle på "oppdaterTekst" funksjonen
-                    oppdaterTekst("Trykk Space for ny runde!", 'stop'); 
+                    oppdaterTekst("Trykk Space eller på sirkelen for ny runde!", 'stop'); 
                 }        
             }
         }
